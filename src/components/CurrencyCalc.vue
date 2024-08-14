@@ -59,7 +59,7 @@
     methods: {
       async calcCurrency() {
         const apiKey = 'aea1320d186d6a219a1179dd5c91818e';
-        const apiUrl = `http://api.exchangeratesapi.io/v1/latest?access_key=${apiKey}`;
+        const apiUrl = `https://api.exchangeratesapi.io/v1/latest?access_key=${apiKey}`;
         try {
           const response = await fetch(apiUrl);
           const data = await response.json();
